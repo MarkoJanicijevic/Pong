@@ -55,7 +55,7 @@ while game_is_on:
 
 
 
-left_paddle.move_up()
+
 
 
 
