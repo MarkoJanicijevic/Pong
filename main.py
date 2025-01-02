@@ -33,13 +33,15 @@ y = 10
 while game_is_on:
     screen.update()
     ball.move_ball(x, y)
-    time.sleep(0.1)
+    time.sleep(ball.pace)
     #collision with top and bottom
     if ball.ycor() > 490 or ball.ycor() < -490:
         y *= -1
 
     if ball.distance(left_paddle) < 50 and ball.xcor() < -730 or ball.distance(right_paddle) < 50  and ball.xcor() > 730:
         x *= -1
+        ball.increase_pase()
+
 
 
     if ball.xcor() > 790:

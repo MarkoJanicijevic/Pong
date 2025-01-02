@@ -9,6 +9,7 @@ class Paddle(Turtle):
         self.create_paddle()
 
 
+
     def create_paddle(self):
         self.penup()
         self.color("white")
@@ -25,6 +26,7 @@ class Paddle(Turtle):
         x = self.xcor()
         y = self.ycor() - 30
         self.goto(x, y)
+
 
 
 
